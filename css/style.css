@@ -8,3 +8,13 @@ body {
 footer {
 background-color: brown;
 }
+
+.container {
+    border: 2px solid blue;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/** media queries*/
