@@ -1,3 +1,11 @@
+:root {
+    --Sunburnt-Cyclops: #ff4758;
+    --Jacarta: #3a3d5c;
+    --Dark-Gunmetal: #24242c;
+
+    --overall-fontsize: 62.5%;
+}
+
 htm,
 body {
     height: 100%;
@@ -6,11 +14,10 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: var(--overall-fontsize)
 }
 
 body {
-    background-color: blueviolet;
     font-size: 1.4rem;
 }
 .main-container {
@@ -18,6 +25,44 @@ body {
     display: flex;
     flex-direction: column;
 }
+/**header*/
+
+.header {
+    background-color: var(--Sunburnt-Cyclops);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar-right {
+    display: none;
+}
+.menu-main {
+    display: none;
+}
+
+.menu-authentication {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.menu-authentication .link-3 {
+    display: none;
+}
+
+/**main*/
 
 .main {
     flex-grow: 1;
@@ -25,6 +70,10 @@ body {
     height: 100vh;
 }
 
+/** footer */
+.footer {
+    background-color: var(--Dark-Gunmetal);
+}
 .container {
     border: 2px solid blue;
     max-width: 96vw;
@@ -47,9 +96,36 @@ body {
     }
 }
 
-@media (min-width 768px ) {
+@media (min-width: 768px ) {
     .container {
         max-width: 720px;
         padding: 0 24px;
+    }
+    .navbar-right {
+        display: block;
+    }
+    .menu-main {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icon-hamburguer {
+        display: none;
+    }
+}
+@media ( min-width: 992px) {
+    .container {
+        max-width: 98rem;
+        padding: 0 3.2rem;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    .container {
+        max-width: 114rem;
+        padding: 0 4rem;
     }
 }
