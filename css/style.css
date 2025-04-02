@@ -19,6 +19,7 @@ html {
 
 body {
     font-size: 1.4rem;
+    font-family: "Inter",sans-serif;
 }
 .main-container {
     max-height: 100vh;
@@ -35,6 +36,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 8rem;
+}
+
+.logo-site {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .navbar-center {
@@ -42,6 +51,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.icon-hamburguer {
+    color: white;
+    font-size: 2.4re;
 }
 .navbar-right {
     display: none;
@@ -58,16 +72,35 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
+
+
 .menu-authentication .link-3 {
     display: none;
 }
 
 .btn {
-    border: 1px solid yellow;
+    border: 1px solid transparent;
     padding: .6rem 1.2rem;
     border-radius: 1.5rem;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+.btn-primary {
+    background: white;
+    border: 1px solid white;
+    color: var(--Sunburnt-Cyclops);
+}
+
+.btn-outline-primary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
 }
 
 /**main*/
@@ -109,8 +142,18 @@ body {
         max-width: 720px;
         padding: 0 24px;
     }
+
+    .navbar-left {
+        flex-basis: 14rem;
+    }
+
+    .navbar-center {
+        flex-grow: 1;
+    }
+
     .navbar-right {
         display: block;
+        flex-basis: 14rem;
     }
     .menu-main {
         list-style: none;
