@@ -1,5 +1,5 @@
-:root {
-    --Sunburnt-Cyclops: #ff4758;
+:root {--Sunburnt-Cyclops
+    : #ff4758;
     --Jacarta: #3a3d5c;
     --Dark-Gunmetal: #24242c;
 
@@ -110,6 +110,26 @@ body {
     flex-grow: 1;
     max-height: 100vh;
     height: 100vh;
+}
+
+.section-call-to-action {
+    
+        background: var(--Sunburnt-Cyclops);
+        display: flex;
+        height: 44rem;
+        border-radius: 0 0 0 12rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 4rem 0;
 }
 
 /** footer */
