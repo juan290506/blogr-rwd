@@ -209,6 +209,28 @@ body {
     font-size: 1.2rem;
 }
 
+/* main: section organice laptop managment */
+.content-organice-laptop-managment{
+    margin: 9rem 0;
+}
+
+.img-organice-laptop-managment {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-organice-laptop-managment p {
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    width: 84%;
+    margin: 0 auto;
+}
+
 
 /** Footer */
 .footer {
@@ -326,8 +348,21 @@ body {
         /* border: 3px solid blue; */
     }
 
-    .content-state-of-the-art .section-2-content {
+    .content .section-2-content {
         margin-right: 10rem;
+    }
+    .section-organice-laptop-managment .section-1,
+    .section-organice-laptop-managment .section-2 {
+        flex: 1;
+    }
+    .content-organice-laptop-managment {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 30rem;
+        margin: 9rem 0 6rem 0;
     }
 
 }
